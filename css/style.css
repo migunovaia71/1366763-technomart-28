@@ -239,6 +239,7 @@ p {
     border: 1px solid var(--extra-light-grey);
     background-color: transparent;
     border-radius: 2px;
+    cursor: pointer;
 }
 
     .catalog-buttons:hover,
@@ -257,6 +258,12 @@ h3 {
     font-size: 18px;
     line-height: 20px;
     color: var(--basic-black);
+}
+
+.item li {
+    width: 220px;
+    height: 318px;
+    border: 1px solid var(--extra-light-grey);
 }
 
 .strike {
@@ -280,6 +287,7 @@ h3 {
     color: var(--basic-white);
     background-color: var(--basic-red);
     border: none;
+    cursor: pointer;
 }
 
 .buy {
@@ -293,11 +301,13 @@ h3 {
     height: 38px;
     box-shadow: inset 0px -3px 0px #367315;
     border-radius: 2px;
+    cursor: pointer;
 }
 
     .buy:hover,
     .buy:focus {
         background-color: var(--light-green);
+        outline: none;
     }
 
     .buy:active {
@@ -314,17 +324,21 @@ h3 {
     text-transform: uppercase;
     color: var(--basic-blue);
     border-radius: 2px;
+    cursor: pointer;
 }    
 
     .to-bookmarks:hover,
     .to-bookmarks:focus {
         border: 3px solid var(--basic-blue);
+        outline: none;
     }
 
     .to-bookmarks:active {
         border: 3px solid rgba(50, 66, 92, 0.5);
         color: rgba(50, 66, 92, 0.5);
     }
+
+
 
 .item-hover {
     width: 220px;
@@ -342,7 +356,9 @@ h3 {
 
 /* Main */
 
-
+.links:not([href]):hover {
+    background-color: transparent;
+}
 
 .box-on-main {
     font-size: 24px;
@@ -424,11 +440,17 @@ h3 {
     background-color: var(--basic-red);
     text-align: center;
     text-transform: uppercase;
-    border: none;
     vertical-align: middle;
+    cursor: pointer;
+    border: none;
 }
 
-
+    .feedback-buttons:active,    
+    .feedback-buttons:focus,
+    .feedback-buttons:hover {
+        outline: none;
+        background-color: var(--dark-red);
+    }
 
 .large-text {
     font-size: 18px;
@@ -503,10 +525,21 @@ h3 {
     color: var(--basic-black);
 }
 
+.filter-text {
+    font-family: PT Sans;
+    font-size: 17px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-black)
+}
+
 .icon-sort {
     border: none;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }    
 
 .sort-item {
@@ -518,6 +551,7 @@ h3 {
     border: none;
     border-bottom: 1px var(--basic-red) dotted;
     background-color: transparent;
+    cursor: pointer;
 }  
 
     .sort-item:hover,
@@ -531,20 +565,30 @@ h3 {
         border: none;
     }
 
+    
+
 .page {
     height: 38px;
     width: 38px;
 }   
 
-.modal-cart-title {
-    /* background: transparent url("../img/icons/icon-mark.svg") no-repeat; */
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    color: var(--basic-black);
+.modal-cart {
+    width: 620px;
 }
+
+    .modal-cart-title {
+        /* background: transparent url("../img/icons/icon-mark.svg") no-repeat; */
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--basic-black);
+    }
+
+    .buttons-background {
+        background-color: #F1F1F1;
+    }
 
 .goon-shoping {
     font-size: 14px;
