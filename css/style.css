@@ -1,0 +1,605 @@
+/* Variables */
+
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-blue: #32425C;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --special-grey: #A9A9A9;
+
+    --light-green: #5FBB2D;
+    --light-yellow: #FFBF47;
+    --light-grey: #EAEAEA;
+
+    --dark-red: #BA2732;
+    --dark-blue: #293449;
+    --dark-grey: #212A3A;
+    --dark-green: #518534;
+
+    --extra-light-grey: #E5E5E5;
+  }
+
+/* Global */  
+
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+a {
+    text-decoration: none;
+    color: var(--basic-white);
+  }  
+
+/* Header */  
+
+.logo-technomart {
+    background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-transform: uppercase;
+    width: 220px;
+    height: 47px;
+    text-align: center;
+}
+
+
+.navigation {
+    font-size: 18px;
+    color: var(--basic-white);
+}  
+
+    nav a:hover,
+    nav a:focus {
+        background-color: var(--dark-blue);
+    }
+
+.full-cart {
+    background-color: var(--basic-red);
+    width: 136px;
+    height: 42px;
+}
+
+.order-buttons {
+    background-color: var(--basic-green);
+    width: 150px;
+    height: 42px;
+    text-align: center;
+}
+
+    .order-buttons:hover,
+    .order-buttons:focus {
+        background-color: var(--light-green);
+    }   
+
+    .order-buttons:active {
+        background-color: var(--basic-green);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+.light-header-footer {
+    background-color: var(--basic-blue);
+}
+
+.dark-header-footer {
+    background-color: var(--dark-blue);
+}
+
+.basic-background {
+    background-color: var(--basic-background);
+    margin: 0;
+}
+
+.list-no-marker {
+  list-style: none;
+  margin: 0px;
+}
+
+.slogan {
+    font-style: italic;
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.contacts {
+    text-align: center;
+    
+}
+
+    .phone {
+        font-size: 21px;
+        color: var(--basic-red);
+        border: 3px solid var(--basic-white);
+        width: 270px;
+        height: 45px;
+        background: url("../img/icons/icon-phone.svg") no-repeat left;
+
+    }
+
+    .address-text {
+        font-size: 14px;
+        color: var(--basic-blue);
+    }
+
+
+.login-buttons {
+    /* width: 300px; */
+    background: var(--basic-white);
+}
+.login-buttons a {
+    font-size: 21px;
+    color: var(--basic-black);
+}
+
+    .login-buttons a:hover,
+    .login-buttons a:focus {
+        color: var(--basic-red);
+    }  
+
+    .enter {
+        width: 121px;
+        height: 45px;
+        background: var(--basic-white) url("../img/icons/icon-login.svg") no-repeat;
+        text-align: center;
+        }   
+    
+    .registration {
+        width: 150px;
+        height: 45px;
+        background-color: var(--basic-white);
+        text-align: center;
+        }   
+        
+    .avatar {
+        padding-left: 56px;
+        width: 227px;
+        height: 21px;
+        background: var(--basic-white) url("../img/icons/icon-user.svg") no-repeat;
+        text-align: center;
+        }    
+        
+    .signout {
+        padding-right: 20px;
+        width: 0;
+        padding-left: 0px;
+        background: var(--basic-white) url("../img/icons/icon-signout.svg") no-repeat;
+    }    
+
+.my-offers {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-blue);
+}    
+
+    .my-offers:hover,
+    .my-offers:focus {
+        color: var(--basic-red);
+    }  
+
+    
+/* Common */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}  
+
+h1, h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-blue);
+    text-transform: uppercase;
+}
+
+.h2-content {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.catalog-buttons {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    border: 1px solid var(--extra-light-grey);
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+    .catalog-buttons:hover,
+    .catalog-buttons:focus {
+        border: 1px solid var(--basic-greylight);
+
+    }
+
+    .catalog-buttons:active {
+        border: 1px solid var(--basic-red);
+    }
+
+h3 {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+
+.strike {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: line-through;
+    color: var(--special-grey);
+}
+
+.price-button {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    border: none;
+}
+
+.buy {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background: url("../img/icons/icon-cart.svg") no-repeat var(--basic-green);
+    border: none;
+    width: 135px;
+    height: 38px;
+    box-shadow: inset 0px -3px 0px #367315;
+    border-radius: 2px;
+}
+
+    .buy:hover,
+    .buy:focus {
+        background-color: var(--light-green);
+    }
+
+    .buy:active {
+        background-color: var(--dark-green);
+    }
+
+.to-bookmarks {
+    border: 3px solid var(--basic-green);
+    background-color: transparent;
+    width: 135px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+    border-radius: 2px;
+}    
+
+    .to-bookmarks:hover,
+    .to-bookmarks:focus {
+        border: 3px solid var(--basic-blue);
+    }
+
+    .to-bookmarks:active {
+        border: 3px solid rgba(50, 66, 92, 0.5);
+        color: rgba(50, 66, 92, 0.5);
+    }
+
+.item-hover {
+    width: 220px;
+    height: 318px;  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+.close-button {
+    width: 21px;
+    height: 21px;  
+    background: transparent url("../img/icons/icon-close.svg") no-repeat;
+    border: none;
+}    
+
+
+/* Main */
+
+
+
+.box-on-main {
+    font-size: 24px;
+    color: var(--basic-white);
+    width: 300px;
+    height: 123px;
+
+}
+
+    .box-on-main a {
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: rgba(255,255,255, 0.3);
+    }
+
+    .box-on-main a:hover,
+    .box-on-main a:focus {
+        background-color: rgb(197,197,197,0.3);
+    }
+
+.materials-background {
+    background-color: var(--special-yellow);
+    background-image: url("../img/main/materials.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.instrument-background {
+    background-color: var(--special-blue);
+    background-image: url("../img/main/instrument.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.equipment-background {
+    background-color: var(--special-lilac);
+    background-image: url("../img/main/equipment.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.sales-background {
+    background-color: var(--special-greenlight);
+    background-image: url("../img/main/sales.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.delivery-background {
+    background-color: var(--special-yellowlight);
+    background-image: url("../img/main/delivery.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.navigation-buttons {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    width: 192px;
+    height: 38px;
+    background-color: var(--basic-red);
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+}    
+
+    .navigation-buttons:hover,
+    .navigation-buttons:focus,
+    .navigation-buttons:active {
+        background-color: var(--dark-red);
+    }
+
+.feedback-buttons {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    height: 38px;
+    background-color: var(--basic-red);
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    vertical-align: middle;
+}
+
+
+
+.large-text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.modal {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top: 7px var(--basic-red) solid;
+}
+
+.modal-map {
+    width: 940px; 
+}
+
+.modal-form {
+    width: 620px;
+    height: 430px;
+}
+
+    .modal-form input[type="text"],
+    .modal-form input[type="email"],
+    .modal-form textarea {
+        font-family: PT Sans;
+        font-size: 13px;
+        line-height: 24px;
+        color: var(--basic-black);
+        border: 2px solid var(--basic-greylight);
+    }
+
+    .modal-form input::placeholder,
+    .modal-form textarea::placeholder  {
+        font-family: PT Sans;
+        font-size: 13px;
+        line-height: 24px;
+        color: var(--special-grey); 
+ } 
+
+/*Catalog*/
+
+
+.breadcrumb{
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+    a.breadcrumb:hover,
+    a.breadcrumb:focus {
+        color: var(--basic-red);
+    }
+
+    
+
+.filter-title {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;    
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.filter-item {
+    font-family: PT Sans;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.icon-sort {
+    border: none;
+    background-color: transparent;
+    border: none;
+}    
+
+.sort-item {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-greylight);
+    border: none;
+    border-bottom: 1px var(--basic-red) dotted;
+    background-color: transparent;
+}  
+
+    .sort-item:hover,
+    .sort-item:focus {
+        color: var(--basic-black);
+        border-bottom: 1px var(--basic-red) solid;
+    }
+
+    .sort-item:active {
+        color: var(--basic-red);
+        border: none;
+    }
+
+.page {
+    height: 38px;
+    width: 38px;
+}   
+
+.modal-cart-title {
+    /* background: transparent url("../img/icons/icon-mark.svg") no-repeat; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--basic-black);
+}
+
+.goon-shoping {
+    font-size: 14px;
+    line-height: 18px;  
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+    .goon-shoping:hover,
+    .goon-shoping:focus,
+    .goon-shoping:active {
+        border: 1px solid var(--basic-red);
+    }
+
+
+/*Footer*/
+
+.logo-in-footer {
+    width: 220px;
+    height: 68px;
+}
+
+.footer-nav {
+    color: var(--special-yellowlight);
+    
+}
+
+.underline-link a:hover,
+.underline-link a:focus {
+    text-decoration: underline;
+}
+
+.social-buttons {
+  display: block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}  
+
+    .social-buttons:hover,
+    .social-buttons:focus {
+        background-color: var(--dark-red);
+    }
+
+    .social-vk {
+        background: var(--dark-grey) url("../img/icons/icon-vk.svg") no-repeat center;
+    }
+
+    .social-fb {
+        background: var(--dark-grey) url("../img/icons/icon-fb.svg") no-repeat center;
+    }
+
+    .social-insta {
+        background: var(--dark-grey) url("../img/icons/icon-insta.svg") no-repeat center;
+    }
+
+    
