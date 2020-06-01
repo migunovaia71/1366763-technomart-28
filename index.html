@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Техномарт</title>
@@ -8,42 +8,44 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
     <header>
-      <ul class="navigation dark-header-footer list-no-marker">
-        <li><a class="logo-technomart">Техномарт</a></li>
-        <li><a href="blank.html"><img src="img/icons/icon-search.svg">Поиск:</a></li>
-        <li><a href="blank.html"><img src="img/icons/icon-bookmark.svg">Закладки: 0</a></li>
-        <li><a href="blank.html"><img src="img/icons/icon-cart.svg">Корзина: 0</a></li>
-        <li><a href="blank.html" class="order-buttons">Оформить заказ</a></li>
-      </ul>
-      <div class="basic-background">
-        <section>
-          <span class="slogan">Интернет-магазин<br>
-          строительных товаров<br>
-          и инструментов для ремонта 
-          </span>
+      <section class="navigation-header dark-header-footer">
+          <a class="logo-in-header"><span class="visually-hidden">Техномарт</span></a>
+          <div class="search"><input type="text" value="Поиск:"></div>
+          <div class="header-buttons">
+            <a href="blank.html" class="bookmark-button"><img src="img/icons/icon-bookmark.svg">Закладки: 0</a>
+            <a href="blank.html" class="empty-cart"><img src="img/icons/icon-cart.svg">Корзина: 0</a>
+            <a href="blank.html" class="order-buttons">Оформить заказ</a>
+          </div>  
+      </section>
+      <div class="header-background">
+        <section class="sub-header">
+            <span class="slogan">Интернет-магазин
+              строительных товаров
+              и инструментов для ремонта 
+            </span>
+            <div class="contacts">
+              <div class="phone">+7 (812) 555-05-55</div>
+              <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+            </div>
+            <section class="login-buttons">
+              <a class="enter" href="blank.html">Войти</a>
+              <a class="registration" href="blank.html">Регистрация</a>
+            </section>
         </section>
-        <div class="contacts">
-          <div class="phone">+7 (812) 555-05-55</div>
-          <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-        </div>
-        <section class="login-buttons">
-          <a class="enter" href="blank.html">Войти</a>
-          <a class="registration" href="blank.html">Регистрация</a>
-        </section>
-        <nav class="navigation light-header-footer">
-          <ul class="list-no-marker">
-            <li><a class="links">Главная</a></li>
-            <li><a href="blank.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="blank.html">Спецпредложения</a></li>
-            <li><a href="blank.html">Доставка</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>  
-        </nav>
-      </div>    
+          <nav class="light-header-footer">
+            <ul class="main-navigation list-no-marker">
+              <li><a class="links">Главная</a></li>
+              <li><a href="blank.html">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="blank.html">Новости</a></li>
+              <li><a href="blank.html">Спецпредложения</a></li>
+              <li><a href="blank.html">Доставка</a></li>
+              <li><a href="blank.html">Контакты</a></li>
+            </ul>  
+          </nav>
+      </div>  
     </header> 
    
     <main>
@@ -80,7 +82,7 @@
       <section>
         <h2>Популярные товары:</h2>
         <a href="blank.html" class="navigation-buttons">Все популярные товары</a>
-        <ul class="item list-no-marker">
+        <ul class="products list-no-marker">
           <li>
             <img src="img/perforator-bosch-9000.png" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -170,7 +172,7 @@
           </dd>
         </dl>
       </section>
-      <div>
+      <div class="about-company">
         <section>
           <h2 class="h2-content">Компания "Технормарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
@@ -185,7 +187,7 @@
           </ul>
           <a href="blank.html" class="navigation-buttons">Подробнее о компании</a>
         </section>
-        <section>
+        <section class="contacts">
           <h2 class="h2-content">Контакты</h2>
           <span>Вы можете забрать товар сами,<br>
           заехав в наш в офис:</span>  
@@ -198,42 +200,46 @@
     <div class="modals">
 
       <section class="modal modal-map">
-          <img src="img/main/map-big.png" width="940px" height="446px" alt="Большая карта">
-          <button type="button">Закрыть</button>
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <img src="img/main/map-big.png" width="940px" height="446px" alt="Большая карта">
       </section>
       
       <!-- Форма обратной связи -->
       <section class="modal modal-form">
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="large-text" for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name" placeholder="Имя Фамилия">    
-          <label class="large-text" for="email">Ваш e-mail:</label>
-          <input type="email" id="email" name="email" placeholder="email@example.com">  
-          <label class="large-text" for="text">Текст письма:</label>
-          <textarea rows="5" id="text" name="text" placeholder="В свободной форме"></textarea> 
+          <div class="form-fields">
+            <label class="user-name form-label" for="name">Ваше имя:</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Имя Фамилия">    
+            <label class="user-email form-label" for="email">Ваш e-mail:</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="email@example.com">  
+            <label class="form-label" for="text">Текст письма:</label>
+            <textarea class="form-textarea" rows="5" id="text" name="text" placeholder="В свободной форме"></textarea> 
+          </div>  
+          <div class="form-background">
+            <button type="submit" class="feedback-buttons">Оформить заказ</button>
+          </div>
         </form>
-        <button type="submit" class="feedback-buttons">Отправить</button>
-        <button type="button">Закрыть</button>
       </section>
 
     </div>
 
     <footer>
-      <div class="navigation light-header-footer">
-        <a class="logo-technomart">Техномарт</a>
-        <section>
+      <div class="navigation-footer-1 light-header-footer">
+        <section class="contacts-in-footer">
+          <a class="logo-in-footer"><span class="visually-hidden">Техномарт</span></a>
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           <span>+7 (812) 555-05-55</span>
         </section>
-        <section>
-          <ul class="list-no-marker underline-link">
+        <section class="menu-in-footer-common">
+          <ul class="menu-in-footer-1 list-no-marker underline-link">
             <li><a href="blank.html">Компания</a></li>
             <li><a href="blank.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="blank.html">Доставка</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
-          <ul class="list-no-marker underline-link">
+          <ul class="menu-in-footer-2 list-no-marker underline-link">
             <li><a class="footer-nav" href="blank.html">Материалы</a></li>
             <li><a class="footer-nav" href="blank.html">Техника</a></li>
             <li><a class="footer-nav" href="blank.html">Инструмент</a></li>
@@ -241,14 +247,14 @@
           </ul>
         </section>
       </div>
-      <div class="navigation dark-header-footer">
+      <div class="navigation-footer-2 dark-header-footer">
         <span>
             2010-2019 Компания "Техномарт"
             <br>
             Все права защищены
         </span>
         <section>
-          <ul class="list-no-marker">
+          <ul class="social list-no-marker">
             <li>
               <a class="social-vk social-buttons" href="#"></a>
               <span class="visually-hidden">Вконтакте</span>
@@ -263,11 +269,11 @@
             </li>
           </ul>
         </section>
-        <span class="underline-link">
+        <span class="copyright underline-link">
           Обратная связь:
           <a class="footer-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </span>
-        <span class="underline-link">
+        <span class="copyright underline-link">
           Разработано:
           <a class="footer-nav" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
         </span>
