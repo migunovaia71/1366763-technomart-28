@@ -19,7 +19,7 @@
             <a href="blank.html" class="order-buttons">Оформить заказ</a>
           </div>  
       </section>
-      <div class="header-background">
+      <div class="basic-background">
         <section class="sub-header">
             <span class="slogan">Интернет-магазин
               строительных товаров
@@ -36,8 +36,8 @@
         </section>
           <nav class="light-header-footer">
             <ul class="main-navigation list-no-marker">
-              <li><a class="links">Главная</a></li>
-              <li><a href="blank.html">Компания</a></li>
+              <li class="link-on-main"><a>Главная</a></li>
+              <li><a class="nav-link" href="blank.html">Компания</a></li>
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="blank.html">Новости</a></li>
               <li><a href="blank.html">Спецпредложения</a></li>
@@ -49,95 +49,101 @@
     </header> 
    
     <main>
-      <h1 class="visually-hidden">Интернет-магазин строительных товаров и инструментов для ремонта</h1>
-      <section>
-        <h2 class="visually-hidden">Разделы каталога</h2>
-        <ul class="list-no-marker">
-          <li class="materials-background box-on-main">Материалы <a href="blank.html">На любой вкус</a></li>
-          <li class="instrument-background box-on-main">Инструмент <a href="blank.html">На все случаи</a></li>
-          <li class="equipment-background box-on-main">Техника <a href="blank.html">Для стройки</a></li>
-        </ul>
-      </section>
-      <section>
-        <!-- Здесь будет слайдер -->
-        <div><span class="slide-title">Перфораторы</span>
-          <span class="slide-subtitle">Настоящие мужские игрушки</span>
-          <img src="img/main/slide-perforator.jpg" alt="Перфораторы">
-        </div>
-        <div><span class="slide-title">Дрели</span>
-          <span class="slide-subtitle">Соседям на радость!</span>
-          <img src="img/main/slide-dreli.jpg" alt="Дрели">
-        </div>
-        <button class="icon-buttons" type="button"><img src="img/icons/icon-left.svg" alt="Назад"></button>
-        <button class="icon-buttons" type="button"><img src="img/icons/icon-right.svg" alt="Вперед"></button>
-        <a href="catalog.html" class="navigation-buttons">Открыть каталог</a>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Скидки и доставка</h2>
-        <ul class="list-no-marker">
-          <li class="sales-background box-on-main">Скидки 50% <a href="blank.html">На 350 товаров</a></li>
-          <li class="delivery-background box-on-main">Доставка <a href="blank.html">Бесплатно</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Популярные товары:</h2>
-        <a href="blank.html" class="navigation-buttons">Все популярные товары</a>
-        <ul class="products list-no-marker">
-          <li>
-            <img src="img/perforator-bosch-9000.png" alt="Перфоратор BOSCH BFG 9000">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-            <span class="strike">32500 P.</span>
-            <button type="button" class="price-button">25500 P.</button>
-          </li>
-          <li>
-            <img src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <span class="strike">22500 P.</span>
-            <button type="button" class="price-button">15500 P.</button>
-          </li>
-          <li>
-            <img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <span class="strike">30500 P.</span>
-            <button type="button" class="price-button">25500 P.</button>
-          </li>
-          <li>
-            <img src="img/perforator-bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <button type="button" class="price-button">12500 P.</button>
-          </li>
-      </ul>  
-      </section>
-      <section>
-        <h2>Популярные производители:</h2>
-        <a href="blank.html" class="navigation-buttons">Все производители</a>
-        <ul class="wendors list-no-marker">
-          <li>
-            <a href="blank.html"><img src="img/main/bosch.png" alt="bosch"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/makita.png" alt="makita"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/dewalt.png" alt="dewalt"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/interskol.png" alt="interskol"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/hitachi.png" alt="hitachi"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/lg.png" alt="lg"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/aeg.png" alt="aeg"></a>
-          </li>
-          <li>
-            <a href="blank.html"><img src="img/main/metabo.png" alt="metabo"></a>
-          </li>
-        </ul>
-      </section>
+      <div class="main-wrapper">
+        <h1 class="visually-hidden">Интернет-магазин строительных товаров и инструментов для ремонта</h1>
+        <section>
+          <h2 class="visually-hidden">Разделы каталога</h2>
+          <ul class="list-no-marker box-wrapper-horizontal">
+            <li class="materials-background box-on-main"><span>Материалы</span><a href="blank.html">На любой вкус</a></li>
+            <li class="instrument-background box-on-main"><span>Инструмент</span><a href="blank.html">На все случаи</a></li>
+            <li class="equipment-background box-on-main"><span>Техника</span><a href="blank.html">Для стройки</a></li>
+          </ul>
+        </section>
+        <div class="slider-wrapper">
+          <section>
+            <!-- Здесь будет слайдер -->
+            <div class="slide-perforator"><span class="slide-title">Перфораторы</span>
+              <span class="slide-subtitle">Настоящие мужские игрушки</span>
+              <button class="icon-buttons previous" type="button"><img src="img/icons/icon-left.svg" alt="Назад"></button>
+              <button class="icon-buttons next" type="button"><img src="img/icons/icon-right.svg" alt="Вперед"></button>
+              <a href="catalog.html" class="navigation-buttons slide-button">Открыть каталог</a>
+            </div>
+            <div class="slide-drill"><span class="slide-title">Дрели</span>
+              <span class="slide-subtitle">Соседям на радость!</span>
+            </div>
+          </section>
+          <section>
+            <h2 class="visually-hidden">Скидки и доставка</h2>
+            <ul class="list-no-marker">
+              <li class="sales-background box-on-main"><span>Скидки 50%</span><a href="blank.html">На 350 товаров</a></li>
+              <li class="delivery-background box-on-main"><span>Доставка</span><a href="blank.html">Бесплатно</a></li>
+            </ul>
+          </section>
+        </div>  
+        <section>
+          <div class="popular-block">
+            <h2 class="h2-popular">Популярные товары:</h2>
+            <a href="blank.html" class="navigation-buttons all-products-button">Все популярные товары</a>
+          </div>
+          <ul class="products list-no-marker">
+            <li>
+              <img class="product-img" src="img/perforator-bosch-9000.png" alt="Перфоратор BOSCH BFG 9000">
+              <h3 class="product-h3">Перфоратор BOSCH BFG 9000</h3>
+              <div class="strike">32500 P.</div>
+              <button type="button" class="price-button">25500 P.</button>
+            </li>
+            <li>
+              <img class="product-img" src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
+              <h3 class="product-h3">Перфоратор BOSCH BFG 3000</h3>
+              <div class="strike">22500 P.</div>
+              <button type="button" class="price-button">15500 P.</button>
+            </li>
+            <li>
+              <img class="product-img" src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
+              <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
+              <div class="strike">30500 P.</div>
+              <button type="button" class="price-button">25500 P.</button>
+            </li>
+            <li>
+              <img class="product-img" src="img/perforator-bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
+              <h3 class="product-h3">Перфоратор BOSCH BFG 2000</h3>
+              <button type="button" class="price-button">12500 P.</button>
+            </li>
+        </ul>  
+        </section>
+        <section>
+          <div class="popular-block">
+            <h2 class="h2-popular">Популярные производители:</h2>
+             <a href="blank.html" class="navigation-buttons all-wendors-button">Все производители</a>
+          </div>
+          <ul class="wendors list-no-marker">
+            <li class="bosch">
+              <a href="blank.html"><span class="visually-hidden">bosch</span></a>
+            </li>
+            <li class="makita">
+              <a href="blank.html"><span class="visually-hidden">makita</span></a>
+            </li>
+            <li class="dewalt"> 
+              <a href="blank.html"><span class="visually-hidden">dewalt</span></a>
+            </li>
+            <li class="interskol">
+              <a href="blank.html"><span class="visually-hidden">interskol</span></a>
+            </li>
+            <li class="hitachi">
+              <a href="blank.html"><span class="visually-hidden">hitachi</span></a>
+            </li>
+            <li class="lg">
+              <a href="blank.html"><span class="visually-hidden">lg</span></a>
+            </li>
+            <li class="aeg">
+              <a href="blank.html"><span class="visually-hidden">aeg</span></a>
+            </li>
+            <li class="metabo">
+              <a href="blank.html"><span class="visually-hidden">metabo</span></a>
+            </li>
+          </ul>
+        </section>
+      </div>  
       <section class="services-background">
         <h2 class="h2-content">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
@@ -192,7 +198,7 @@
           <span>Вы можете забрать товар сами,<br>
           заехав в наш в офис:</span>  
           <a href="https://goo.gl/maps/q4NApWyFaG3zwqVR7" target="_blank"><img src="img/main/map.png" alt="Карта"></a>
-          <button type="button" class="feedback-buttons">Заблудились? Напишите нам!</button>
+          <button type="button" class="feedback-buttons contacts-buttons">Заблудились? Напишите нам!</button>
         </section>
      </div> 
     </main> 
