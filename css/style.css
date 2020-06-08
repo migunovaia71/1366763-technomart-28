@@ -117,6 +117,7 @@ a {
     .main-navigation li {
         flex-grow: 1;
         text-align: center;
+        cursor: pointer;
     }
 
     .main-navigation li:hover,
@@ -694,6 +695,7 @@ h3 {
     text-transform: uppercase;
     margin-right: 10px;
     border-radius: 2px;
+    cursor: pointer;
 }
 
     .page-buttons:hover,
@@ -1301,22 +1303,43 @@ h3 {
         display: block;
         cursor: pointer;
         user-select: none;
-        padding-left: 35px;
+        padding-left: 31px;
+        padding-top: 2px;
     }
-    
-        .filter-checkbox svg {
+
+        .filter-checkbox + label::before {
+            z-index: 1;
             position: absolute;
-            left: 0px;
+            content: "";
+            width: 23px;
+            height: 23px;
             top: 0px;
+            left: 0px;
+            background: url("../img/icons/checkbox-off.svg") no-repeat;
+            opacity: 0.7;
+            cursor: pointer;
         }
 
-        .filter-checkbox:hover path,
-        .filter-checkbox:focus path
+        .filter-checkbox:checked + label::after {
+            z-index: 2;
+            position: absolute;
+            content: "";
+            width: 27px;
+            height: 23px;
+            top: 0px;
+            left: 0px;
+            background: url("../img/icons/checkbox-on.svg") no-repeat;
+            opacity: 0.7;
+        }  
+
+        .filter-checkbox:hover + label::before,
+        .filter-checkbox:focus + label::after
         {
-            fill: #B5B5B5;
+            opacity: 1;
           }
 
-       .filter-radio + label::before {
+
+        .filter-radio + label::before {
             position: absolute;
             top: 0px;
             left: 0px;
