@@ -830,21 +830,29 @@ h3 {
     justify-content: space-between;
 }
 
-.slide-perforator {
+.slider {
     position: relative;
-    background: url("../img/main/slide-perforator.jpg") no-repeat;
+}
+
+.slide {
+    display: none;
+    position: relative;
     width: 620px;
     height: 266px;
     margin-top: 20px;
+  }
+
+.slide-current {
+  display: block;
+}
+
+.slide-perforator {
+    background: url("../img/main/slide-perforator.jpg") no-repeat;
 }
 
 .slide-drill {
-    position: relative;
     background: url("../img/main/slide-drill.jpg") no-repeat;
-    width: 620px;
-    height: 266px;
-    margin-top: 20px;
-}
+   }
 
 .slide-title {
     font-weight: bold;
@@ -874,13 +882,13 @@ h3 {
 
 .previous {
     position: absolute;
-    top: 122px;
+    top: 142px;
     left: 24px;
 }
 
 .next {
     position: absolute;
-    top: 122px;
+    top: 142px;
     right: 20px;
 }
 
@@ -981,11 +989,41 @@ h3 {
 }
 
 .services-background {
+    position: relative;
     background-color: var(--basic-background);
     width: 1200px;
+    padding: 64px 130px 99px;
     /* height: 522px; */
 }
 
+    .services-background::after {
+        width: 10px;
+        height: 279px;
+        content: "";
+        position: absolute;
+        background: url("../img/main/shadow.png") no-repeat;
+        top: 189px;
+        left: 360px;
+    }
+
+.services-wrapper {
+    margin-top: 70px;
+    position: relative;
+}
+
+.slide-service {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 320px;
+    width: 619px;
+    min-height: 283px;
+    margin: 0px;
+}
+
+.services-current {
+    display: block;
+}
 
 .services-tab {
     width: 240px;
@@ -1006,7 +1044,7 @@ h3 {
         background-color: var(--dark-blue);
     }
 
-    .services-tab:active {
+    .services-tab.current-tab {
         background-color: var(--basic-white);
         box-shadow: 0px 1px 0px #FFFFFF;
         color: var(--basic-blue);
@@ -1014,20 +1052,17 @@ h3 {
 
     .services-delivery {
         background: transparent url("../img/main/services-delivery.png") no-repeat;
-        width: 619px;
-        height: 283px;
+        background-position: bottom right;
     }
 
     .services-warranty {
         background: transparent url("../img/main/services-warranty.png") no-repeat;
-        width: 619px;
-        height: 283px;
+        background-position: bottom right;
     }
 
     .services-credit {
         background: transparent url("../img/main/services-credit.png") no-repeat;
-        width: 619px;
-        height: 283px;
+        background-position: bottom right;
     }
 
 .about-company {
