@@ -1308,7 +1308,6 @@ h3 {
     }
 
         .filter-checkbox + label::before {
-            z-index: 1;
             position: absolute;
             content: "";
             width: 23px;
@@ -1320,8 +1319,7 @@ h3 {
             cursor: pointer;
         }
 
-        .filter-checkbox:checked + label::after {
-            z-index: 2;
+        .filter-checkbox:checked + label::before {
             position: absolute;
             content: "";
             width: 27px;
@@ -1333,7 +1331,7 @@ h3 {
         }  
 
         .filter-checkbox:hover + label::before,
-        .filter-checkbox:focus + label::after
+        .filter-checkbox:hover + label
         {
             opacity: 1;
           }
