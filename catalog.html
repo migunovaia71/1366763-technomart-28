@@ -13,10 +13,32 @@
     <header>
       <section class="navigation-header dark-header-footer">
           <a href="index.html" class="logo-in-header"><span class="visually-hidden">Техномарт</span></a>
-          <div class="search"><input type="text" value="Поиск:"></div>
+          <div class="search">
+            <svg width="17" height="17" viewBox="150 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M163.458 12.044L167 15.586L165.586 17L162.044 13.458C160.782 14.421 159.21 15 157.5 15C153.358 15 150 11.6421 150 7.5C150 3.35786 153.358 0 157.5 0C161.642 0 165 3.35786 165 7.5C165 9.14309 164.458 10.7403 163.458 12.044ZM157.5 2C154.467 2 152 4.467 152 7.5C152.003 10.5362 154.464 12.9967 157.5 13C160.532 13 163 10.532 163 7.5C163 4.467 160.532 2 157.5 2Z" fill="white"/>
+              </g>
+              </svg>
+            <input type="text" value="Поиск:"></div>
           <div class="header-buttons">
-            <a href="blank.html" class="bookmark-button"><img src="img/icons/icon-bookmark.svg">Закладки: 0</a>
-            <a href="blank.html" class="full-cart"><img src="img/icons/icon-cart.svg">Корзина: 10</a>
+            <a href="blank.html" class="bookmark-button">
+              <span>Закладки: 0</span> 
+              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
+                </g>
+                </svg>
+            </a>
+            <a href="blank.html" class="full-cart">
+              <span>Корзина: 10</span>
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </g>
+                </svg>
+            </a>
             <a href="blank.html" class="order-buttons">Оформить заказ</a>
           </div>  
       </section>
@@ -32,8 +54,19 @@
             </div>
             <section>
               <div class="login-buttons">
-                <a class="avatar" href="blank.html">Равшан Джамшутович</a>
-                <a class="signout" href="blank.html"><span class="visually-hidden">Выйти</span></a>  
+                <a class="avatar" href="blank.html">
+                  <span>Равшан Джамшутович</span>
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+                    </svg>
+                </a>
+                <a class="signout" href="blank.html">
+                  <span class="visually-hidden">Выйти</span>
+                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+                    <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
+                    </svg>
+                </a>  
               </div>  
               <div class="my-offers">
                 <a href="blank.html">Мои заказы</a>
@@ -114,24 +147,51 @@
                 <legend class="filter-title">Производители:</legend>
                 <ul class="list-no-marker filter-list">
                   <li>
-                    <input type="checkbox" id="bosch" checked>
-                    <label class="filter-item" for="bosch">Bosch</label>
+                    <input class="visually-hidden" type="checkbox" id="bosch" checked>
+                    <label class="filter-checkbox" for="bosch">
+                      <span>Bosch</span>
+                        <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z" fill="#C5C5C5"/>
+                          <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" fill="#C5C5C5"/>
+                        </svg>
+                      </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="interskol">
-                    <label class="filter-item" for="interskol">Интерскол</label>
+                    <input class="visually-hidden" type="checkbox" id="interskol">
+                    <label class="filter-checkbox" for="interskol">
+                      <span>Интерскол</span>
+                      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
+                      </svg>
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="makita" checked>
-                    <label class="filter-item" for="makita">Makita</label>
+                    <input class="visually-hidden" type="checkbox" id="makita" checked>
+                    <label class="filter-checkbox" for="makita">
+                      <span>Makita</span>
+                      <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.28499 7.48598L4.45599 10.315L12.239 18.098L26.171 4.16598L23.343 1.33698L12.239 12.439L7.28499 7.48598Z" fill="#C5C5C5"/>
+                        <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" fill="#C5C5C5"/>
+                      </svg>
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="dewalt">
-                    <label class="filter-item" for="dewalt">Dewolt</label>
+                    <input class="visually-hidden" type="checkbox" id="dewalt">
+                    <label class="filter-checkbox" for="dewalt">
+                      <span>Dewolt</span>
+                      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
+                      </svg>
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="hitachi">
-                    <label class="filter-item" for="hitachi">Hitachi</label>
+                    <input class="visually-hidden" type="checkbox" id="hitachi">
+                    <label class="filter-checkbox" for="hitachi">
+                      <span>Hitachi</span>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
+                        </svg>
+                      </label>
                   </li>
                 </ul>
               </fieldset>
@@ -140,12 +200,12 @@
               <legend class="filter-title">Питание:</legend>
               <ul class="list-no-marker filter-list">
                 <li>
-                  <input type="radio" name="power" id="battery" checked>  
-                  <label class="filter-item" for="battery">Аккумуляторные</label> 
+                  <input class="visually-hidden filter-radio" type="radio" name="power" id="battery" checked>  
+                  <label for="battery">Аккумуляторные</label> 
                 </li>
                 <li> 
-                  <input type="radio" name="power" id="network ">  
-                  <label class="filter-item" for="network ">Сетевые</label>
+                  <input class="visually-hidden filter-radio" type="radio" name="power" id="network ">  
+                  <label for="network ">Сетевые</label>
                 </li>
             </fieldset>
           </form>
@@ -167,10 +227,18 @@
                 <button class="sort-item sort-for-function" type="submit">По функционалу</button>
               </li>
               <li>
-                <button class="icon-buttons sort-for-ascending" type="submit"><img src="img/icons/icon-up-sort.svg" alt="По возрастанию"></button>
+                <button class="icon-buttons sort-for-ascending" type="submit">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
+                  </svg>
+                </button>
               </li>
               <li>
-                <button class="icon-buttons sort-for-descending" type="submit"><img src="img/icons/icon-down-sort.svg" alt="По убыванию"></button>
+                <button class="icon-buttons sort-for-descending" type="submit">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5"/>
+                  </svg>
+                </button>
               </li>
             </ul>
           </section>
