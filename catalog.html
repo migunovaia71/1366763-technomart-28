@@ -52,16 +52,16 @@
       <div class="basic-background">
         <div class="width-wrapper">
           <section class="sub-header">
-              <span class="slogan">Интернет-магазин
-                строительных товаров
-                и инструментов для ремонта 
+              <span class="slogan">Интернет-магазин<br>
+                строительных материалов<br>
+                и инструментов для ремонта  
               </span>
-              <div class="contacts">
+              <div>
                 <div class="phone">+7 (812) 555-05-55</div>
                 <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               </div>
               <section>
-                <div class="login-buttons">
+                <div class="personal-cabinet">
                   <a class="avatar" href="blank.html">
                     <span>Равшан Джамшутович</span>
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,11 +76,11 @@
                       </svg>
                   </a>  
                 </div>  
-                <div class="my-offers">
-                  <a href="blank.html">Мои заказы</a>
-                  <a href="blank.html">Личный кабинет</a>
-                </div>  
               </section>
+              <div class="my-offers">
+                <a href="blank.html">Мои заказы</a>
+                <a class="link-personal" href="blank.html">Личный кабинет</a>
+              </div>    
           </section>
             <nav class="light-header-footer">
               <ul class="main-navigation list-no-marker">
@@ -101,17 +101,17 @@
       <section class="width-wrapper">
           <ul class="breadcrumb-wrapper list-no-marker">
               <li>
-                <a class="breadcrumb" href="index.html"><img src="img/icons/icon-home.svg" alt="Главная"></a>
+                <a href="index.html"><img src="img/icons/icon-home.svg" alt="Главная"></a>
               </li>
-              <li><span>&nbsp; &gt; &nbsp;</span></li>
+              <!-- <li><span>&nbsp; &gt; &nbsp;</span></li> -->
               <li>
                 <a class="breadcrumb" href="blank.html">Каталог</a>  
               </li>
-              <li><span>&nbsp; &gt; &nbsp;</span></li>
+              <!-- <li><span>&nbsp; &gt; &nbsp;</span></li> -->
               <li>
                 <a class="breadcrumb" href="blank.html">Инструменты</a>
               </li>
-              <li><span>&nbsp; &gt; &nbsp;</span></li>
+              <!-- <li><span>&nbsp; &gt; &nbsp;</span></li> -->
               <li>
                 <span class="breadcrumb">Перфораторы</span>
               </li>
@@ -169,7 +169,7 @@
                   </li>
                   <li>
                     <input class="visually-hidden filter-checkbox" type="checkbox" id="dewalt">
-                    <label for="dewalt">Dewolt</label>
+                    <label for="dewalt">Dewalt</label>
                   </li>
                   <li>
                     <input class="visually-hidden filter-checkbox" type="checkbox" id="hitachi">
@@ -179,7 +179,7 @@
               </fieldset>
             </div>  
             <fieldset class="filter-fieldset">
-              <legend class="filter-title">Питание:</legend>
+              <legend class="filter-title battery-title">Питание:</legend>
               <ul class="list-no-marker filter-list">
                 <li>
                   <input class="visually-hidden filter-radio" type="radio" name="power" id="battery" checked>  
@@ -197,11 +197,10 @@
 
         <div class="sort-and-products">
           <section class="sort-wrapper">
-            <!-- Здесь будет сортировка товаров -->
             <span class="sort-text">Сортировка:</span>
             <ul class="sort list-no-marker">
               <li>
-                <button class="sort-item sort-for-price" type="submit">По цене</button>
+                <button class="sort-item sort-for-price sort-price-select" type="submit">По цене</button>
               </li>
               <li>
                 <button class="sort-item sort-for-type" type="submit">По типу</button>
@@ -210,7 +209,7 @@
                 <button class="sort-item sort-for-function" type="submit">По функционалу</button>
               </li>
               <li>
-                <button class="icon-buttons sort-for-ascending" type="submit">
+                <button class="icon-buttons sort-for-ascending sort-ascending-select" type="submit">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
                   </svg>
@@ -303,8 +302,8 @@
                 <button type="button" class="price-button">12500 P.</button>
               </li>
             </ul>  
-            <ul class="list-no-marker">
-              <li class="page-buttons current-page">
+            <ul class="list-no-marker paginal-list">
+              <li class="current-page page-buttons">
                 <a>1</a>
               </li>
               <li class="page-buttons">
@@ -324,7 +323,7 @@
       <section class="seo-text-background">
         <div class="width-wrapper">
           <h2 class="h2-content">Пара слов о перфораторах</h2>
-          <p>
+          <p class="seo-text">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -348,8 +347,8 @@
           <div class="navigation-footer-1">
             <section class="contacts-in-footer">
               <a href="index.html" class="logo-in-footer"><span class="visually-hidden">Техномарт</span></a>
-              <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-              <span>+7 (812) 555-05-55</span>
+              <span class="footer-text1">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+              <span class="footer-text1">+7 (812) 555-05-55</span>
             </section>
             <section class="menu-in-footer-common">
               <ul class="menu-in-footer-1 list-no-marker underline-link">
@@ -372,12 +371,12 @@
       <div class="dark-header-footer">
         <div class="width-wrapper">
           <div class="navigation-footer-2">
-            <span>
-                2010-2019 Компания "Техномарт"
+            <span class="footer-text2">
+              &#169; 2010-2019 Компания &#171;Техномарт&#187;
                 <br>
                 Все права защищены
             </span>
-            <section>
+            <!-- <section class="social-and-contacts"> -->
               <ul class="social list-no-marker">
                 <li>
                   <a class="social-vk social-buttons" href="#"></a>
@@ -392,18 +391,18 @@
                   <span class="visually-hidden">Инстаграм</span>
                 </li>
               </ul>
-            </section>
-            <span class="copyright underline-link">
-              Обратная связь:
-              <a class="footer-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </span>
-            <span class="copyright underline-link">
-              Разработано:
-              <a class="footer-nav" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
-            </span>
+              <span class="copyright footer-text3 underline-link">
+                Обратная связь:<br>
+                <a class="footer-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </span>
+              <span class="copyright footer-text4 underline-link">
+                Разработано:<br>
+                <a class="footer-nav" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+              </span>
+            <!-- </section> -->
           </div>  
         </div> 
-      </div>  
+      </div> 
     </footer>
 
   </body>
