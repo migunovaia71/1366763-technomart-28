@@ -16,7 +16,8 @@
           <div class="navigation-header">
           <a href="index.html" class="logo-in-header"><span class="visually-hidden">Техномарт</span></a>
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" placeholder="Поиск:">
+            <label for="search"><span class="visually-hidden">Поиск</span></label>
+            <input type="text" placeholder="Поиск:" id="search">
             <button class="search-button" type="submit">
               <svg width="17" height="17" viewBox="150 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.3">
@@ -57,7 +58,7 @@
                 и инструментов для ремонта  
               </span>
               <div>
-                <div class="phone">+7 (812) 555-05-55</div>
+                <a class="phone" href="tel:+7(812)5550555">+7 (812) 555-05-55</a>
                 <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               </div>
               <section>
@@ -86,7 +87,7 @@
               <ul class="main-navigation list-no-marker">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="blank.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
+                <li class="current-menu-item"><a href="catalog.html">Каталог</a></li>
                 <li><a href="blank.html">Новости</a></li>
                 <li><a href="blank.html">Спецпредложения</a></li>
                 <li><a href="blank.html">Доставка</a></li>
@@ -101,7 +102,7 @@
       <section class="width-wrapper">
           <ul class="breadcrumb-wrapper list-no-marker">
               <li>
-                <a href="index.html"><img src="img/icons/icon-home.svg" alt="Главная"></a>
+                <a href="index.html"><img src="img/icons/icon-home.svg" alt="Главная" width="14" height="12"></a>
               </li>
               <!-- <li><span>&nbsp; &gt; &nbsp;</span></li> -->
               <li>
@@ -229,7 +230,7 @@
               <li class="catalog-li">
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
                 <div class="strike">30500 P.</div>
                 <button type="button" class="price-button">25500 P.</button>
@@ -237,16 +238,7 @@
               <li class="catalog-li">
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000"></div>
-                <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
-                <div class="strike">30500 P.</div>
-                <button type="button" class="price-button">25500 P.</button>
-              </li>
-              <li class="catalog-li">
-                <div class="product-new">New</div>
-                <button type="button" class="buy">Купить</button>
-                <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
                 <div class="strike">30500 P.</div>
                 <button type="button" class="price-button">25500 P.</button>
@@ -255,7 +247,16 @@
                 <div class="product-new">New</div>
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></div>
+                <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
+                <div class="strike">30500 P.</div>
+                <button type="button" class="price-button">25500 P.</button>
+              </li>
+              <li class="catalog-li">
+                <div class="product-new">New</div>
+                <button type="button" class="buy">Купить</button>
+                <button type="button" class="to-bookmarks">В закладки</button>
+                <div class="product-img"><img src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 3000</h3>
                 <div class="strike">22500 P.</div>
                 <button type="button" class="price-button">15500 P.</button>
@@ -263,7 +264,7 @@
               <li class="catalog-li">
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 6000</h3>
                 <div class="strike">30500 P.</div>
                 <button type="button" class="price-button">25500 P.</button> 
@@ -272,7 +273,7 @@
                 <div class="product-new">New</div>
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-2000.png" alt="Перфоратор BOSCH BFG 2000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 2000</h3>
                 <button type="button" class="price-button">12500 P.</button>
               </li>
@@ -280,7 +281,7 @@
                 <div class="product-new">New</div>
                 <button type="button" class="buy">Купить</button>
                 <button type="button" class="to-bookmarks">В закладки</button>
-                <div class="product-img"><img src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000"></div>
+                <div class="product-img"><img src="img/perforator-bosch-3000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"></div>
                 <h3 class="product-h3">Перфоратор BOSCH BFG 3000</h3>
                 <div class="strike">22500 P.</div>
                 <button type="button" class="price-button">15500 P.</button>
@@ -404,6 +405,6 @@
         </div> 
       </div> 
     </footer>
-
+    <script src="js/cart.js"></script>
   </body>
 </html>

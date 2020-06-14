@@ -35,7 +35,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    font-family: 'Cuprum', sans-serif;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -129,9 +129,11 @@ a {
             background-color: var(--dark-blue);
         }
 
-    .main-navigation li:active {
+    .main-navigation li:active,
+    .current-menu-item {
         opacity: 0.5;
-    }    
+        background-color: var(--dark-blue);
+    } 
 
 .search {
     position: relative;
@@ -341,6 +343,7 @@ a {
 }
 
     .phone {
+        display: block;
         font-size: 21px;
         color: var(--basic-red);
         font-weight: bold;
@@ -412,8 +415,6 @@ a {
         .enter:active path {
             fill: var(--basic-greylight);
         }
-
-        
     
     .registration {
         display: inline-block;
@@ -538,13 +539,13 @@ h1, h2 {
 }
 
 p {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
 h3 {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
@@ -623,9 +624,8 @@ h3 {
     bottom: 79px;
 }
 
-
 .strike {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -642,7 +642,7 @@ h3 {
 .price-button {
     position: relative;
     display: block;
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -737,8 +737,6 @@ h3 {
         color: rgba(50, 66, 92, 0.5);
     }
 
-
-
 .item-hover {
     width: 220px;
     height: 318px;  
@@ -755,7 +753,7 @@ h3 {
     min-width: 38px;
     border: 1px solid var(--extra-light-grey);
     text-align: center;
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 38px;
     text-transform: uppercase;
@@ -903,6 +901,11 @@ h3 {
 
 .slider {
     position: relative;
+}
+
+.sliders {
+    padding: 0px;
+    margin: 0px;
 }
 
 .slide {
@@ -1205,7 +1208,7 @@ h3 {
     line-height: 25px;
 }
 
-.contacts-buttons {
+.contacts-button {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -1252,12 +1255,23 @@ h3 {
     }
 
 .modal {
+    display: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-top: 7px var(--basic-red) solid;
     position: fixed;
 }
 
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .close-button {
+    z-index: 2;
     width: 21px;
     height: 21px;  
     background: transparent url("../img/icons/icon-close.svg") no-repeat;
@@ -1270,7 +1284,6 @@ h3 {
 }  
 
 .modal-map {
-    display: none;
     width: 943px;
     height: 442px; 
     top: 50%;
@@ -1279,16 +1292,29 @@ h3 {
     margin-left: -472px;
 }
 
-.modal-map img {
+.map-img {
+    cursor: pointer;
+}
+
+/* .modal-map img {
     display: block;
-  }
+  } */
 
 .modal-map iframe {
+    position: relative;
+    z-index: 2;
     border: none;
   }
 
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
 .modal-form {
-    display: none;
     background-color: var(--basic-white);
     width: 620px;
     height: 430px;
@@ -1301,7 +1327,7 @@ h3 {
     .modal-form input[type="text"],
     .modal-form input[type="email"],
     .modal-form textarea {
-        font-family: PT Sans, sans-serif;
+        font-family: PT Sans, "Arial", sans-serif;
         font-size: 13px;
         line-height: 24px;
         color: var(--basic-black);
@@ -1310,7 +1336,7 @@ h3 {
 
     .modal-form input::placeholder,
     .modal-form textarea::placeholder  {
-        font-family: PT Sans, sans-serif;
+        font-family: PT Sans, "Arial", sans-serif;
         font-size: 13px;
         line-height: 24px;
         color: var(--special-grey); 
@@ -1336,7 +1362,8 @@ h3 {
     padding: 3px 8px 7px 10px;
 }
 
-.form-input {
+.user-name,
+.user-email {
     width: 220px;
     height: 38px;
     padding: 7px 8px 7px 10px;
@@ -1349,11 +1376,11 @@ h3 {
     line-height: 24px;
 }
 
-.user-name {
+.user-name-label {
     order: -2;
 }
 
-.user-email {
+.user-email-label {
     order: -1;
     padding-left: 2px;
 }
@@ -1367,15 +1394,13 @@ h3 {
 
 /*Catalog*/
 
-
 .breadcrumb{
     position: relative;
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
     text-transform: uppercase;
-    /* margin-right: 41px; */
     margin-left: 41px;
 }
 
@@ -1421,7 +1446,7 @@ h3 {
 }
 
 .filter-title {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;    
@@ -1450,9 +1475,9 @@ h3 {
         width: 70%;
         height: 2px;
         background: #00ca74;
-      }  
+        }  
       
-      .range-controls .toggle {
+    .range-controls .toggle {
         position: absolute;
         top: 30px;
         left: 0;
@@ -1464,19 +1489,20 @@ h3 {
         border-radius: 50%;
         box-shadow: 0 2px 1px 0 #cfcfcf;
         cursor: pointer;
-      }
+        }
 
-        .range-controls .toggle-min {
-            left: 18px;
+    .range-controls .toggle-min {
+        left: 18px;
         }
         
-        .range-controls .toggle-max {
-            left: 140px;
+    .range-controls .toggle-max {
+        left: 140px;
         }
-  .price-controls {
-      display: flex;
-      justify-content: space-between;
-    }
+
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+}
 
     .price-controls input {
         width: 95px;
@@ -1485,7 +1511,7 @@ h3 {
         border: none;
         border-radius: 3px;
         background: var(--basic-beige);
-        font-family: PT Sans, sans-serif;
+        font-family: PT Sans, "Arial", sans-serif;
         font-size: 17px;
         line-height: 18px;
         text-align: center;
@@ -1498,78 +1524,77 @@ h3 {
         padding-top: 7px;
     }
 
-    .filter-list label {
-        position: relative;
-        font-family: PT Sans, sans-serif;
-        font-size: 15px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: var(--basic-black);
-        display: block;
+.filter-list label {
+    position: relative;
+    font-family: PT Sans, "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 35px;
+}
+
+    .filter-checkbox + label::before {
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 23px;
+        top: -3px;
+        left: 0px;
+        background: url("../img/icons/checkbox-off.svg") no-repeat;
+        opacity: 0.7;
         cursor: pointer;
-        user-select: none;
-        padding-left: 35px;
     }
 
-        .filter-checkbox + label::before {
-            position: absolute;
-            content: "";
-            width: 23px;
-            height: 23px;
-            top: -3px;
-            left: 0px;
-            background: url("../img/icons/checkbox-off.svg") no-repeat;
-            opacity: 0.7;
-            cursor: pointer;
+    .filter-checkbox:checked + label::before {
+        position: absolute;
+        content: "";
+        width: 27px;
+        height: 23px;
+        top: -3px;
+        left: 0px;
+        background: url("../img/icons/checkbox-on.svg") no-repeat;
+        opacity: 0.7;
+    }  
+
+    .filter-checkbox:hover + label::before,
+    .filter-checkbox:hover + label
+    {
+        opacity: 1;
         }
 
-        .filter-checkbox:checked + label::before {
-            position: absolute;
-            content: "";
-            width: 27px;
-            height: 23px;
-            top: -3px;
-            left: 0px;
-            background: url("../img/icons/checkbox-on.svg") no-repeat;
-            opacity: 0.7;
-        }  
+    .filter-radio + label::before {
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        content: "";
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 2px solid var(--basic-greylight);
+    }
 
-        .filter-checkbox:hover + label::before,
-        .filter-checkbox:hover + label
-        {
-            opacity: 1;
-          }
+    .filter-radio:checked + label::after {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: var(--basic-greylight);
+        border-radius: 50%;
+    }
 
+    .filter-radio:hover + label::before {
+        border: 2px solid #B5B5B5;
+    }
 
-        .filter-radio + label::before {
-            position: absolute;
-            top: -2px;
-            left: 0px;
-            content: "";
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
-            border: 2px solid var(--basic-greylight);
-        }
-
-        .filter-radio:checked + label::after {
-            position: absolute;
-            top: 6px;
-            left: 8px;
-            content: "";
-            width: 9px;
-            height: 9px;
-            background-color: var(--basic-greylight);
-            border-radius: 50%;
-        }
-
-        .filter-radio:hover + label::before {
-            border: 2px solid #B5B5B5;
-        }
-
-        .filter-radio:hover + label::after {
-            background-color: #B5B5B5;
-        }
+    .filter-radio:hover + label::after {
+        background-color: #B5B5B5;
+    }
 
 .battery-title {
         margin-bottom: 5px;
@@ -1579,7 +1604,7 @@ h3 {
     display: block;
     width: 220px;
     height: 38px;
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1591,7 +1616,7 @@ h3 {
 }
 
 .filter-button {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-align: center;
@@ -1634,8 +1659,6 @@ h3 {
 .filter-list li {
     padding-top: 20px;
 }
-
-
 
 .icon-buttons {
     border: none;
@@ -1685,7 +1708,7 @@ h3 {
 .sort-text {
     height: 38px;
     width: 240px;
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1695,7 +1718,7 @@ h3 {
 }
 
 .sort-item {
-    font-family: PT Sans, sans-serif;
+    font-family: PT Sans, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1761,7 +1784,7 @@ h3 {
 }    
 
 .modal-cart {
-    display: none;
+    /* display: none; */
     background-color: var(--basic-white);
     width: 620px;
     height: 282px;
@@ -1812,7 +1835,6 @@ h3 {
     .goon-shoping:active {
         border: 1px solid var(--basic-red);
     }
-
 
 /*Footer*/
 
@@ -1939,4 +1961,44 @@ h3 {
         background: var(--dark-grey) url("../img/icons/icon-insta.svg") no-repeat center;
     }
 
-    
+/* Animations */
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
