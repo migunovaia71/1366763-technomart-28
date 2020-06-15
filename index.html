@@ -5,7 +5,7 @@
     <title>Интернет-магазин Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -57,7 +57,7 @@
                 и инструментов для ремонта 
               </span>
               <div>
-                <a class="phone" href="tel:+7(812)5550555">+7 (812) 555-05-55</a>
+                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               </div>
               <section class="login-buttons">
@@ -200,7 +200,6 @@
           <h2 class="h2-content">Сервисы</h2>
           <p class="p1-service">Хороший интернет-магазин отличается от плохого не только ценами!</p>
           <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <!-- Здесь будет слайдер -->
           <dl class="services-wrapper">
               <dt class="services-tab current-tab">Доставка</dt>
               <dd class="slide-service services-current services-delivery">
@@ -280,6 +279,14 @@
         </form>
         <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
+      <section class="modal modal-cart">
+        <div class="modal-cart-title">Товар добавлен в корзину!</div>
+        <ul class="list-no-marker buttons-background">
+          <li><a class="navigation-buttons" href="blank.html">Оформить заказ</a></li>
+          <li><a class="goon-shoping" href="catalog.html">Продолжить покупки</a></li>
+        </ul>
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </section>
 
     <footer>
       <div class="light-header-footer">
@@ -316,7 +323,6 @@
                 <br>
                 Все права защищены
             </span>
-            <!-- <section class="social-and-contacts"> -->
               <ul class="social list-no-marker">
                 <li>
                   <a class="social-vk social-buttons" href="#"></a>
@@ -339,12 +345,10 @@
                 Разработано:<br>
                 <a class="footer-nav" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
               </span>
-            <!-- </section> -->
           </div>  
         </div> 
       </div>   
     </footer>
-  <script src="js/feedback.js"></script>
-  <script src="js/map.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

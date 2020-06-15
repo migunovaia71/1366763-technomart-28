@@ -192,7 +192,7 @@ a {
     position: relative;
     width: 150px;
     height: 42px;
-    padding-top: 10px;
+    line-height: 42px;
     padding-left: 29px;
 }
 
@@ -229,7 +229,7 @@ a {
     display: block;
     width: 136px;
     height: 42px;
-    padding-top: 10px;
+    line-height: 42px;
     padding-left: 35px;
 }
 
@@ -266,7 +266,7 @@ a {
     background-color: var(--basic-red);
     width: 136px;
     height: 42px;
-    padding-top: 10px;
+    line-height: 42px;
     padding-left: 35px;
 }
 
@@ -291,7 +291,7 @@ a {
     width: 150px;
     height: 42px;
     text-align: center;
-    padding-top: 10px;
+    line-height: 42px;
 }
 
     .order-buttons:hover,
@@ -325,7 +325,6 @@ a {
     background-color: var(--dark-blue);
 }
 
-
 .list-no-marker {
   list-style: none;
   margin: 0px;
@@ -350,10 +349,10 @@ a {
         border: 3px solid var(--basic-white);
         width: 270px;
         height: 45px;
+        line-height: 40px;
         background: url("../img/icons/icon-phone.svg") no-repeat left;
         background-position: 37px 12px;
         padding-left: 72px;
-        padding-top: 9px;
         margin-top: 5px;
         margin-left: 70px;
     }
@@ -391,14 +390,15 @@ a {
 
     .enter {
         display: inline-block;
+        vertical-align: middle;
         position: relative;
         background-color: var(--basic-white);
         width: 121px;
         height: 45px;
         font-size: 21px;
         color: var(--basic-black);
+        line-height: 45px;
         padding-left: 45px;
-        padding-top: 10px;
         margin-right: 6px;
         }   
 
@@ -418,13 +418,14 @@ a {
     
     .registration {
         display: inline-block;
+        vertical-align: middle;
         width: 150px;
         height: 45px;
         background-color: var(--basic-white);
         font-size: 21px;
         color: var(--basic-black);
-        padding-left: 24px;
-        padding-top: 10px;
+        text-align: center;
+        line-height: 45px;
         }   
         
     .avatar {
@@ -433,7 +434,7 @@ a {
         color: var(--basic-black);
         background-color: var(--basic-white);
         text-align: center;
-        padding-top: 10px;
+        line-height: 45px;
         padding-left: 58px;
         }   
         
@@ -659,7 +660,6 @@ h3 {
     position: absolute;
     bottom: 20px;
     left: 46px;
-    padding-left: 12px;
 }
 
     .price-button:focus {
@@ -749,6 +749,7 @@ h3 {
 
 .page-buttons {
     display: inline-block;
+    vertical-align: middle;
     height: 38px;
     min-width: 38px;
     border: 1px solid var(--extra-light-grey);
@@ -837,7 +838,7 @@ h3 {
         position: absolute;
         top: 64px;
         left: 23px;
-        padding-top: 8px;
+        line-height: 38px;
         text-align: center;
     }
 
@@ -967,9 +968,14 @@ h3 {
 }
 
 .popular-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--basic-beige);
     height: 89px;
-    position: relative;
+    width: 940px;
+    padding-left: 28px;
+    padding-right: 14px;
     height: 89px;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -980,19 +986,16 @@ h3 {
 }
 
 .h2-popular {
-    position: absolute;
     top: 30px;
     left: 29px;
 }
 
 .all-products-button {
-    position: absolute;
     top: 25px;
     right: 13px;
 }
 
 .all-wendors-button {
-    position: absolute;
     top: 25px;
     right: 18px;
 }
@@ -1217,14 +1220,13 @@ h3 {
 .navigation-buttons {
     display: block;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 38px;
     color: var(--basic-white);
     width: 192px;
     height: 38px;
     background-color: var(--basic-red);
     text-align: center;
     text-transform: uppercase;
-    padding-top: 11px;
 }    
 
     .navigation-buttons:hover,
@@ -1295,10 +1297,6 @@ h3 {
 .map-img {
     cursor: pointer;
 }
-
-/* .modal-map img {
-    display: block;
-  } */
 
 .modal-map iframe {
     position: relative;
@@ -1784,7 +1782,6 @@ h3 {
 }    
 
 .modal-cart {
-    /* display: none; */
     background-color: var(--basic-white);
     width: 620px;
     height: 282px;
@@ -1815,6 +1812,7 @@ h3 {
 
         .buttons-background li {
             display: inline-block;
+            vertical-align: middle;
         }
 
 .goon-shoping {

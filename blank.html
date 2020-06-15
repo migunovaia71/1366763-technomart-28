@@ -5,7 +5,7 @@
     <title>Интернет-магазин Техномарт | Каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
 
@@ -16,7 +16,8 @@
           <div class="navigation-header">
           <a href="index.html" class="logo-in-header"><span class="visually-hidden">Техномарт</span></a>
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" placeholder="Поиск:">
+            <label for="search"><span class="visually-hidden">Поиск</span></label>
+            <input type="text" placeholder="Поиск:" id="search">
             <button class="search-button" type="submit">
               <svg width="17" height="17" viewBox="150 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.3">
@@ -57,7 +58,7 @@
                 и инструментов для ремонта  
               </span>
               <div>
-                <div class="phone">+7 (812) 555-05-55</div>
+                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <div class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               </div>
               <section>
@@ -86,7 +87,7 @@
               <ul class="main-navigation list-no-marker">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="blank.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
+                <li class="current-menu-item"><a href="catalog.html">Каталог</a></li>
                 <li><a href="blank.html">Новости</a></li>
                 <li><a href="blank.html">Спецпредложения</a></li>
                 <li><a href="blank.html">Доставка</a></li>
@@ -138,7 +139,6 @@
                 <br>
                 Все права защищены
             </span>
-            <!-- <section class="social-and-contacts"> -->
               <ul class="social list-no-marker">
                 <li>
                   <a class="social-vk social-buttons" href="#"></a>
@@ -161,11 +161,10 @@
                 Разработано:<br>
                 <a class="footer-nav" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
               </span>
-            <!-- </section> -->
           </div>  
         </div> 
       </div> 
     </footer>
-
+    <script src="js/script.min.js"></script>
   </body>
 </html>
