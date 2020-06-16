@@ -76,13 +76,14 @@ a {
 }
 
 .logo-in-header {
-    background: var(--basic-red) url("../img/logo-technomart.svg") no-repeat;
-    background-position: center 12px;
+    background-color: var(--basic-red);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
     text-transform: uppercase;
     width: 220px;
     height: 47px;
     display: block;
+    text-align: center;
+    line-height: 47px;
 }
 
     .logo-in-header:active {
@@ -957,14 +958,53 @@ h3 {
 
 .previous {
     position: absolute;
-    top: 142px;
-    left: 18px;
+    top: 143px;
+    left: 23px;
+    height: 41px;
+    width: 23px;
+    background: url("../img/icons/icon-left.svg") no-repeat;
+    border: none;
+    cursor: pointer;
 }
 
 .next {
     position: absolute;
-    top: 142px;
-    right: 13px;
+    height: 41px;
+    width: 23px;
+    background: url("../img/icons/icon-right.svg") no-repeat;
+    top: 143px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.pin-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 30px;
+    position: absolute;
+    bottom: 35px;
+    right: 295px;
+}
+
+.slider-pin {
+    content: "";
+    background-color: var(--basic-white);
+    border: var(--basic-white) solid 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+.slider-pin-current {
+    content: "";
+    background-color: var(--basic-red);
+    border: var(--basic-white) solid 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 0px;
 }
 
 .popular-block {
@@ -1003,7 +1043,6 @@ h3 {
 .wendors {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .wendors li {
@@ -1012,6 +1051,7 @@ h3 {
     border: 1px solid var(--extra-light-grey);
     margin-bottom: 20px;
     cursor: pointer;
+    margin-right: 20px;
 }
 
     .wendors li:hover,
@@ -1031,6 +1071,10 @@ h3 {
         width: 100%;
         background-position: center;
     }
+
+.wendors li:nth-child(4n) {
+    margin-right: 0px;    
+}    
 
 .bosch {
     background: url("../img/main/bosch.png") no-repeat;
@@ -1659,10 +1703,9 @@ h3 {
 }
 
 .icon-buttons {
-    border: none;
     background-color: transparent;
-    border: none;
     cursor: pointer;
+    border: none;
 }    
 
     .icon-buttons:focus {
@@ -1852,8 +1895,7 @@ h3 {
 }
 
 .logo-in-footer {
-    background: var(--basic-red) url("../img/logo-technomart-big.svg") no-repeat;
-    background-position: center 20px;
+    background: var(--basic-red);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
     text-transform: uppercase;
     width: 220px;
@@ -1861,6 +1903,7 @@ h3 {
     text-align: center;
     display: block;
     margin-bottom: 22px;
+    line-height: 68px;
 }
 
 .contacts-in-footer {
